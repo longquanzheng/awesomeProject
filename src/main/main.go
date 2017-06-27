@@ -9,4 +9,10 @@ import (
  *************************************************************************************************/
 
 func main() {
+	//start scheduler
+
+	//start client
+
+	//TODO monitor
+	//TODO apid
 }

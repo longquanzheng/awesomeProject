@@ -3,8 +3,8 @@ package main
 type ProtocolType uint8
 
 const (
-	HTTP_RUNNER = 1
-	HTTPS_RUNNER = 1
+	PROTOCOL_TYPE_HTTP_RUNNER = 1
+	PROTOCOL_TYPE_HTTPS_RUNNER = 2
 )
 
 type RunnerEndpoint struct {
@@ -27,4 +27,16 @@ type Job struct {
 	runners []RunnerEndpoint
 }
 
+type NodeStatus uint8
+
+const (
+	NODE_STATUS_ACTIVE = 1
+	NODE_STATUS_NEEDS_RECOVERY = 2
+)
+
+type Node struct {
+	ipv4 string
+	cluster_id string
+	status NodeStatus
+}
 
