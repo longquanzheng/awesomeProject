@@ -1,12 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
-
 /************************************************************************************************
- * Main entry for different programs: Job sheduler/Job monitor/Management daemon/Runner clients
+ * A scheduler implementation using https://github.com/robfig/cron
  *************************************************************************************************/
 
-func main() {
-}
+
