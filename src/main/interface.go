@@ -27,9 +27,13 @@ type Scheduler interface {
 
 
 type Client interface {
+
+	//Start running client
 	Run()
-	ProtocolType() int
-	ExecuteJob(job Job)
+
+	//start executing job if it doesn't run yet
+	//return status and STDOUT of the running command
+	ExecuteJob(job Job) (string, string)
 }
 
 /************************************************************************************************

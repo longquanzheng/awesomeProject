@@ -15,6 +15,8 @@ type RunnerEndpoint struct {
 type Job struct {
 	//universal unique id for a job
 	id string
+	//command
+	cmd string
 	//owner id
 	owner string
 	//is enabled
